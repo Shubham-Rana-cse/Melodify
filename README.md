@@ -1,0 +1,1 @@
+This is a music application heavily inspied by "Spotify Web player".

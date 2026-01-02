@@ -1,0 +1,692 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Spotify Mix';
+}
+
+@font-face {
+    font-family: 'Spotify Mix';
+    src: local('Spotify Mix Light'), local('Spotify-Mix-Light'),
+        url('SpotifyMix-Light/SpotifyMix-Light.woff2') format('woff2'),
+        url('SpotifyMix-Light/SpotifyMix-Light.woff') format('woff'),
+        url('SpotifyMix-Light/SpotifyMix-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+.home-search{
+    width: auto;
+    height: 7vh;
+    max-height: 50px;
+}
+
+.logo{
+    width: 6vw;
+    padding-top: 8.5px;
+    padding-left: 7px;
+}
+
+.logo img{
+    width: 131px;
+}
+
+.home{
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    border: none;
+    padding: 7px;
+    margin-top: 2px;
+    margin-left: 30px;
+}
+
+.search-box{
+  position:relative;
+  min-height: 25px;
+}
+
+.search-box input{
+  width:30vw;
+  height:100%;
+  border-radius:25px;
+  margin-left: 15px;
+  border:none;
+
+  padding-left:45px;
+  padding-right:55px;
+}
+
+.search-box input:hover{
+    border: 1px solid white;
+}
+
+.search-box .icon img,
+.search-box .browse img{
+  position:absolute;
+  top:50%;
+  transform:translateY(-50%);
+  width:25px;
+  
+}
+
+.search-box .browse img{
+    border-left: 1px solid grey;
+    padding-left: 10px;
+}
+
+.search-box .icon img{ left:25px; }
+.search-box .browse img{ right:18px; }
+
+/* .search-box .icon img{
+    width: 25px;
+    left: 20px;
+    top: 25%;
+    filter: invert(50%);
+    position:absolute;  
+}
+
+.search-box .browse img{
+    position:absolute;
+    width: 25px;
+    right: -106px;
+    top: 25%;
+    filter: invert(50%);
+} */
+
+.header .others{
+    gap: 20px;
+    width: 100%;
+    font-size: 14px;
+    justify-content: flex-end;
+}
+
+.others .explore-premium{
+    background-color: white;
+    border-radius: 100px;
+    width: 140px;
+    height: 30px;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.others .install-app img{
+    width: 20px;
+    margin-right: 7px;
+}
+
+.others .install-app b{
+    color: grey;
+}
+
+.others .install-app:hover{
+    b{
+        color: white;
+    }
+    img{
+        filter: invert(1);
+    }
+}
+
+.noti-groups{
+    gap: 20px;
+}
+
+.noti-groups button{
+    width: 20px;
+    border: none;
+}
+
+.others .user{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    border: none;
+    background-color: grey;
+}
+
+.user img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+main .library{
+    background-color: #121212;
+}
+
+.library{
+    width: 30.7vw;
+    height: 76.5vh;
+    border-radius: 10px;
+    margin: 0 9px 0px 9px;
+}
+
+.library header{
+    width: 100%;
+    height: 15%;
+    max-height: 90px;
+}
+
+.library header .your-lib{
+    width: 73%;
+    height: 40px;
+    padding-top: 10px;
+    background-color: #121212;
+}
+
+.library header .your-lib button{
+    margin: 0px;
+    padding: 0px;
+    width: 130px;
+    gap: 15px;
+    border: none;
+    align-items: center;
+    /*border: none;*/
+    color: white;
+    background-color: #121212;
+    border-radius: 10px;
+}
+
+.your-lib button img{
+    height: 100%;
+    width: 19px;
+    margin-left: 15px;
+}
+
+.library header .create{
+    height: 35px;
+    width: 25%;
+    border: none;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 50px;
+    margin: 18px;
+}
+
+.library div div{
+    background-color: #1f1f1f;
+    margin: 8px 8px 21px 8px;
+    height: 140px;
+    flex-direction: column;
+    border-radius: 13px;
+    gap: 10px;
+}
+
+.library .non-songs-list div{
+    height: 10%;
+    margin: 20px;
+    display: flex;
+    gap: 7px;
+}
+
+.library .non-songs-list button{
+    background-color: white;
+    border: none;
+    width: 120px;
+    height: 35px;
+    border-radius: 50px;
+    margin: 20px;
+}
+
+.create img{
+    height: 100%;
+    width: 19px;
+}
+
+main .songs{
+    width: 68vw;
+    background-color: #121212;
+    height: 76.5vh;
+    border-radius: 10px;
+}
+
+.songs header{
+    height: 7vh;
+    max-height: 70px;
+}
+
+.songs header div{
+    width: 600px;
+    margin: 15px 25px;
+    height: 27px;
+}
+.songs header div span{
+    margin: 5px;
+    border-radius: 20px;
+    height: 100%;
+    min-width: 43px;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2px;
+    font-size: 14.5px;
+}
+
+.songs .music{
+    background-color: #383838;
+    width: 60px;
+}
+
+.songs .podcasts{
+    background-color: #383838;
+    width: 100px;
+}
+
+main .songs section{
+    margin: 20px;
+    height: 100%;
+}
+
+/* section .categories .top-charts{
+    
+} */
+
+.songs section header{
+    justify-content: space-between;
+    margin: 15px;
+}
+
+.top-charts header a{
+    color: inherit;
+}
+
+.top-charts .card-container{
+    gap: 10px;
+}
+
+.card-container div .poster{
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.card-container div{
+    width: 155px;
+    height: 100%;
+    padding: 20px;
+}
+
+.card-container .card{
+    font-size: 13px;
+    color: #878787;
+    cursor: pointer;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: relative;
+}
+
+.greenPlayBtn{
+    width: 25%;
+    position: absolute;
+    margin-top: 52%;
+    margin-left: 52%;
+    display: none;
+}
+
+.card:hover{
+    .greenPlayBtn{
+        display: block;
+    }
+}
+
+.scroll-box-400{
+  height: 400px;      /* set the height you want */
+  overflow-y: auto;   /* enables vertical scrolling */
+  overflow-x: hidden; /* optional: hide horizontal scroll */
+
+  scrollbar-width: auto;
+  scrollbar-color: #888 #121212;
+}
+
+.card-container .card:hover{
+    background-color: rgb(40, 39, 39);
+}
+
+main .songs section div header b{
+    cursor: pointer;
+}
+
+main .songs section div header b{
+    cursor: pointer;
+}
+
+.play-bar{
+    height: 11.2vh; /*remaining space*/
+    background-color: #121212;
+    margin: 8px;
+    border-radius: 10px;
+    gap: 40px;
+}
+
+.song-cover-details{
+    height: 100%;
+    width: 30vw;
+    gap: 10px;
+    margin-left: 10px;
+}
+
+/* span is inline, and inline elements do NOT accept width/height.
+Make them block (or inline-block)
+*/
+.song-cover-details .song-poster{
+    display: flex;
+    height: 85%;
+}
+
+.song-cover-details div img{
+    object-fit: cover;
+    /*width: 100%;*/
+    height: auto;
+    border-radius: 4px;
+}
+
+.song-cover-details button{
+    margin-left: auto;
+    background-color: #121212;
+    border: none;
+}
+
+.song-cover-details button img{
+    height: 17px;
+    width: 17px;
+}
+
+.song-details{
+    flex-direction: column;
+}
+
+.song-details b{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: inline-block;
+    max-width: 250px;
+}
+
+musicians{
+    display: inline-block;
+    width: 15vw;
+    height: 16px;
+    color: #878787;
+    font-size: 12px;
+    font-weight: bold;
+
+    white-space: nowrap;
+    overflow: hidden;
+    position: relative;
+}
+
+musicians span{
+  display:inline-block;
+  white-space:nowrap;
+  animation:scroll 8s linear infinite;
+}
+/*
+    @keyframes is a CSS rule used to define animations.
+        It describes how an element should change over time—from a starting state to one or more intermediate states, to an ending state.
+        Works together with the animation: property on an element
+*/
+
+@keyframes scroll{
+    from{
+        transform:translateX(0);
+    }
+    to{
+        transform:translateX(-50%);
+    }
+}
+
+/*
+HOW TO MAKE HORIZONTAL SCROLLING ANIMATION 
+
+1️⃣ Created a container (<musicians>)
+    Acts as the visible box
+    Fixed width so overflow can happen
+
+2️⃣ Hide anything outside the box
+    So only the part inside width is visible.
+
+3️⃣ Forced text into a single line
+    Prevents wrapping to the next line.
+
+4️⃣ Wrapped the text in a child element (<span>)
+    This element is what we actually move.
+
+5️⃣ Made the text scroll using CSS animation
+    We animate the transform: translateX() property.
+
+    8s → speed
+    linear → smooth constant speed
+    infinite → repeats forever
+
+6️⃣ Created the keyframes to move the text left
+    Start at normal position → move left.
+
+7️⃣ Duplicated the text
+    Because when the first part scrolls out, the second part continues immediately — giving a perfect infinite loop with no blank gap.
+*/
+
+.play-pause{
+    height: 100%;
+    width: 40vw;
+    flex-direction: column;
+}
+
+.play-pause .upper{
+    margin: 5px;
+    gap: 20px;
+}
+
+.play-pause .upper .play-btn{
+    height: 2rem;
+    width: 2rem;
+    padding: 2px;
+    background-color: rgb(5, 228, 5);
+    border: none;
+    border-radius: 50%;
+}
+
+.play-pause .upper .play-btn img{
+    width: 60%;
+}
+
+.play-pause .upper .other-btns{
+    height: 16px;
+    width: 16px;
+    background-color: #121212;
+    border: none;
+    gap: 10px;
+}
+
+.other-functions{
+    height: 100%;
+    width: 30vw;
+}
+
+/* AFTER WRITING SOME JS */
+
+.library content ul li{
+    padding: 5px;
+    gap: 10px;
+    justify-content: start;
+    border-radius: 10px;
+}
+
+.library content ul li:hover{
+    background-color: #171717;
+}
+
+.scroll-box-300{
+  height: 84%;      /* set the height you want */
+  overflow-y: auto;   /* enables vertical scrolling */
+  overflow-x: hidden; /* optional: hide horizontal scroll */
+
+  scrollbar-width: auto;
+  scrollbar-color: #888 #121212;
+}
+
+.library content .about-song{
+    max-width: 300px;
+}
+
+.library aName{
+    font-size: 14px;
+}
+
+.songs-list ul li span:nth-child(2){
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.songs-list ul li span:nth-child(3){
+    margin-left: auto;  /* Take all remaining space and be at flex end */
+}
+
+/* lets now go back to complete play-bar design */
+.play-bar .play-pause .lower{
+    gap: 10px;
+    font-size: 12px;
+}
+
+.play-bar .play-pause .seek-bar{
+    width: 35vw;
+    height: 6px;
+    background-color: #4d4d4d;
+    border-radius: 5px;
+    position: relative;
+}
+
+.seek-bar .fill{
+    height: 100%;
+    width: 0%;
+    background-color: white;
+    border-radius: 5px;
+    transition: width 0.15s linear;
+    pointer-events: none;
+}
+
+.seek-bar .current-instance-circle{
+    width: 0;
+    background-color: white;
+    border-radius: 50%;
+    top: 50%;
+
+    position: relative;
+
+    /* left: 0%; */    /* This is laggy */
+    transform: translateY(-50%) translate(0px);     /* This centers cicle on the seek bar */
+                                                        /* This is the actual movement vale we will update using JS */
+    transition: transform 0.15s linear;   /* Makes the movement smooth */
+    /*
+        transform → which property should animate
+
+        0.15s → 0.15 seconds animation duration
+
+        linear → constant speed (important for music progress bars)
+    */
+}
+
+.seek-bar:hover{
+    .fill{
+        background-color: green;
+    }
+    .current-instance-circle{
+        height: 11px;
+        width: 12px;
+    }
+}
+
+.other-functions button{
+    width: 18px;
+    height: 18px;
+    background-color: #121212;
+    border: none;
+}
+
+
+.volume {
+  width: 9vw;
+  outline: none;
+  cursor: pointer;
+}
+
+/* ---------- Chrome / Edge / Safari ---------- */
+
+/* Track */
+.volume::-webkit-slider-runnable-track {
+  height: 7px;
+}
+
+/* Thumb (hidden normally) */
+.volume::-webkit-slider-thumb {
+    background: transparent; /* invisible but interactive */
+    border: none;
+    width: 14px;
+    height: 14px;
+    margin-top: -4px;
+}
+
+/* Show thumb on hover */
+.volume:hover::-webkit-slider-thumb {
+    opacity: 1;
+}
+
+.volume-button-and-bar:hover{
+    & .volume::-webkit-slider-thumb {
+        opacity: 1;
+    }
+
+    & img{
+        filter: invert(1);
+    }
+}
+
+/*
+    Plain CSS does not allow this nesting syntax.
+
+    This only works in browsers that support CSS Nesting (Chrome, Edge, Safari, Firefox recent builds).
+    If you aren’t intentionally using modern CSS nesting, stick with the plain version.
+
+    Make sure we use '&' for nesting purpose.
+*/
+
+.other-functions{
+    gap: 15px;
+    justify-content: flex-end;
+    margin: 0 40px 0 10px;
+}
+
+.other-functions span{
+    gap: 8px;
+}
+
+.ALL{
+    display: block;
+    transition: display 1s linear;
+}
+
+.MUSIC{
+    display: none;
+}
+
+.MUSIC .card-container{
+    flex-wrap: wrap;
+}
+.MUSIC .card{
+    color: white;
+}
+.PODCASTS{
+    display: none;
+}
+
+.PODCASTS img{
+    width: 40vw;
+}
+

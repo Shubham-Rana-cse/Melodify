@@ -1,0 +1,246 @@
+.border{
+    border: 2px solid red;
+    margin: 3px;
+}
+
+.flex{
+    display: flex;
+}
+
+.justify-center{
+    justify-content: center;
+}
+
+.items-center{
+    align-items: center;
+}
+
+.bg-black{
+    background-color: black;
+    color: white;
+}
+
+.bg-grey{
+    background-color: #1f1f1f;
+    color: white;
+}
+
+.bg-white{
+    background-color: white;
+    color: black;
+}
+
+.invert-50{
+    filter: invert(50%);
+}
+
+.invert{
+    filter: invert(1);
+}
+
+.rounded{
+    border-radius: 7px;
+}
+
+.m-1{
+    margin: 5px;
+}
+
+.p-1{
+    padding: 7px;
+}
+
+.transformOnHover:hover{
+    transform: scale(1.05);
+}
+
+.invert-color-on-hover:hover{
+    filter: invert(1);
+}
+
+button, svg{
+    cursor: pointer;
+}
+
+.hover{
+    cursor: pointer;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:visited{
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+/*
+We achieve reponsiveness mainly by:
+1️⃣ Flexible Layouts (Flexbox / Grid)
+2️⃣ Responsive Units (%, vw, vh, rem)
+3️⃣ Media Queries (rules for different screen sizes)
+4️⃣ Sometimes clamp() for automatic scaling (making responsive text)
+5. Responsive images
+*/
+
+/*
+A media query in CSS is a feature that lets your webpage change its design based on the user’s device or environment — such as screen size, device type, orientation, resolution, and more.
+
+It is the core of responsive web design.
+
+Media queries override existing CSS when their condition becomes true.
+They don’t delete the old CSS; they conditionally replace it because of how the Cascade works.
+
+Write styles for mobile first → then add breakpoints for bigger screens.
+
+Common breakpoints:
+    576px → small phones
+    768px → tablets
+    1024px → small laptops
+    1440px → desktops
+*/
+
+header{
+    height: 6.5vh;
+    min-height: 25px;
+}
+
+main{
+    height: 76.5vh;
+}
+/* Many more adjustments but done directly in style.css */
+
+.hamburger img{
+    display: none;
+    height: 30px;
+    width: 30px;
+}
+
+.categories div div:first-child{
+  max-height: 400px;     /* choose any height */
+  overflow-y: hidden;      /* enable vertical scroll */
+  overflow-x: auto;    /* avoid horizontal scroll */
+}
+
+.card-container .card{
+  flex: 0 0 155px;     /* width stays fixed */
+}
+
+.categories .card-container::-webkit-scrollbar{ display:none; }
+.categories .card-container{ scrollbar-width:none; }
+
+@media (max-width: 1400px){
+    main .library{
+        position: absolute;
+        /*display: none;*/    /*only for phone like iphone se*/
+        left: -110%;
+        transition: all .3s linear;
+        z-index: 3;
+    }
+    /*
+    z-index in CSS controls which element appears in front of which when elements overlap.
+    Think of it like layers in Photoshop or stacking cards: higher z-index = closer to you.
+
+        Elements with higher z-index sit on top
+
+        Elements with the same z-index follow HTML order
+
+        z-index only works on positioned elements
+        (position: relative | absolute | fixed | sticky)
+    */
+
+    .hamburger:hover{
+        .library{
+            left: 0%;
+        }
+    }
+
+    main .songs{
+        width: 100vw;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    .hamburger img{
+        display: block;
+        margin-left: 1vw;
+    }
+
+    .logo{
+        display: none;
+    }
+    .home{
+        display: none;
+    }
+}
+
+@media (max-width: 1200px){
+    .library{
+        width: 370px;
+    }
+    .search-box input{
+        width: 45vw;
+    }
+}
+
+@media (max-width: 800px){
+    .others .install-app{
+        display: none;
+    }
+    .volume{
+        display: none;
+    }
+    .search-box input{
+        width: 40vw;
+    }
+}
+
+@media (max-width: 600px){
+    .others .explore-premium{
+        display: none;
+    }
+    .noti-groups{
+        display: none;
+    }
+    header .others{
+        width: 50px;
+    }
+    .search-box input{
+        width: 75vw;
+    }
+    .song-cover-details button{
+        display: none;
+    }
+    .upper{
+        gap: 0;
+    }
+    .song-cover-details{
+        scale: 0.8;
+        margin-left: 0;
+    }
+    .other-functions{
+        display: none;
+    }
+    .song-details{
+        font-size: smaller;
+    }
+    
+    .categories header{
+        font-size: small;
+    }
+
+    .card-container .card{
+        flex: 0 0 100px;
+        font-size: xx-small;
+        padding: 10px;
+    }
+
+    .search-box{
+        scale: 0.9;
+        margin-left: -15px;
+    }
+}

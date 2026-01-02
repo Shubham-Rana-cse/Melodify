@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Web Player</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utility.css">
+</head>
+<body class="bg-black">
+    <header class="header bg-black p-1 flex items-center">
+        <div class="hamburger hover transformOnHover">
+            <img src="assets/hamburger.svg" class="invert-50 invert-color-on-hover" alt="menu">
+        </div>
+        <div class="logo">
+            <img class="hover" src="assets/newLogo.png" alt="logo">
+        </div>
+
+        <div class="home-search flex">
+            <button class="home bg-grey transformOnHover devAtWork">
+                <img class="invert hover" src="assets/home.svg" alt="home">
+            </button>
+
+            <div class="search-box">
+                <span class="icon devAtWork">
+                    <img src="assets/search.svg" class="invert-50 hover invert-color-on-hover" alt="search">
+                </span>
+                
+                <input type="search" class="bg-grey" placeholder="What do you want to play?">
+
+                <span class="browse transformOnHover devAtWork">
+                    <img src="assets/browse.svg" class="invert-50 hover transformOnHover invert-color-on-hover" alt="browse">
+                </span>
+            </div>
+        </div>
+
+        <span class="others flex items-center">
+            <span class="explore-premium hover transformOnHover devAtWork">
+                <b>Explore Premium</b>
+            </span>
+            <span class="install-app flex justify-center items-center hover transformOnHover devAtWork">
+                <img src="assets/install.svg" class="invert-50" alt="install">
+                <b>Install App</b>
+            </span>
+            <div class="noti-groups flex devAtWork">
+                <button class="notifications bg-black">
+                    <img src="assets/notifications.svg" class="invert-50 invert-color-on-hover" alt="notifications">
+                </button>
+                <button class="groups bg-black">
+                    <img src="assets/groups.svg" class="invert-50 invert-color-on-hover" alt="groups">
+                </button>
+
+            </div>
+            <button class="user transformOnHover devAtWork">
+                <img src="assets/shubh.jpg" alt="user-picture">
+            </button>
+        </span>
+    </header>
+
+    <main class="flex">
+        <div class="library">
+            <header class="flex justify-center items-center">
+                <div class="your-lib flex">
+                    <button class="flex devAtWork">
+                        <img src="assets/collapse.svg" class="invert-50 invert-color-on-hover" alt="collapse">
+                        <b>Your Library</b>
+                    </button>
+                </div>
+                <button class="create flex bg-grey devAtWork">
+                    <img src="assets/plus.svg" class="invert-50 invert-color-on-hover" alt="plus">
+                    <b>Create</b>
+                </button>
+            </header>
+
+            <div class="scroll-box-300">
+                <div class="flex non-songs-list">
+                    <div>
+                        <span><b>Create your first playlist</b></span>
+                        <span>It's easy, we'll help you</span>
+                    </div>
+                    <button class="transformOnHover devAtWork">
+                        <b>Create playlist</b>
+                    </button>
+                </div>
+
+                <div class="flex non-songs-list">
+                    <div>
+                        <span><b>Let's find someone podcast to follow</b></span>
+                        <span>We'll keep your updated on new episodes</span>
+                    </div>
+                    <button class="transformOnHover devAtWork">
+                        <b>Browse podcasts</b>
+                    </button>
+                </div>
+
+                <content class="songs-list">
+                    <ul>
+                        <li class="flex justify-center items-center hover">
+                            <span>
+                                <img src="assets/music.svg" class="invert" alt="cover">
+                            </span>
+
+                            <span class="about-song">
+                                <sName><b>Song Name</b></sName>
+                                <br>
+                                <aName>Song Artists</aName>
+                            </span>
+
+                            <span class="flex devAtWork">
+                                <img src="assets/threeDots.svg" class="invert devAtWork" alt="threeDots">
+                            </span>
+                        </li>
+                    </ul>
+                </content>
+            </div>
+
+        </div>
+
+        <div class="songs bg-grey scroll-box-400">
+            <header>
+                <div class="flex">
+                    <span class="bg-white hover all"><b>All</b></span>
+                    <span class="hover music"><b>Music</b></span>
+                    <span class="hover podcasts"><b>Podcasts</b></span>
+                </div>
+            </header>
+
+            <section class="ALL">
+                <div class="categories">
+                    <div class="recommended top-charts">
+                        <header class="flex items-center">
+                            <a href=""><h2><b>Recommended for you</b></h2></a>
+                            <a href=""><b>Show all</b></a>
+                        </header>
+                        <div>
+                            <div class="card-container flex vertical-scroll">
+                                <div class="card devAtWork">
+                                    <img src="https://i.scdn.co/image/ab67706f000000025bfe950e2408675d7be6de9a" class="poster" alt="poster">
+                                    <img src="assets/greenPlay.svg" class="greenPlayBtn" alt="play-album">
+                                    <p>
+                                        <b><b>The most streamed songs of 2025 in Hindi.</b></b>
+                                    </p>
+                                </div>
+
+                                <div class="card devAtWork">
+                                    <img src="https://i.scdn.co/image/ab67706f000000025bfe950e2408675d7be6de9a" class="poster" alt="poster">
+                                    <img src="assets/greenPlay.svg" class="greenPlayBtn" alt="play-album">
+                                    <p>
+                                        <b>The most streamed songs of 2025 in Hindi.</b>
+                                    </p>
+                                </div>
+
+                                <div class="card devAtWork">
+                                    <img src="https://i.scdn.co/image/ab67706f000000025bfe950e2408675d7be6de9a" class="poster" alt="poster">
+                                    <img src="assets/greenPlay.svg" class="greenPlayBtn" alt="play-album">
+                                    <p>
+                                        <b>The most streamed songs of 2025 in Hindi.</b>
+                                    </p>
+                                </div>
+
+                                <div class="card devAtWork">
+                                    <img src="https://i.scdn.co/image/ab67706f000000025bfe950e2408675d7be6de9a" class="poster" alt="poster">
+                                    <img src="assets/greenPlay.svg" class="greenPlayBtn" alt="play-album">
+                                    <p>
+                                        <b>The most streamed songs of 2025 in Hindi.</b>
+                                    </p>
+                                </div>
+
+                                <div class="card devAtWork">
+                                    <img src="https://i.scdn.co/image/ab67706f000000025bfe950e2408675d7be6de9a" class="poster" alt="poster">
+                                    <img src="assets/greenPlay.svg" class="greenPlayBtn" alt="play-album">
+                                    <p>
+                                        <b><b>The most streamed songs of 2025 in Hindi.</b></b>
+                                    </p>
+                                </div>
+                                <div class="card devAtWork">
+                                    <img src="https://i.scdn.co/image/ab67706f000000025bfe950e2408675d7be6de9a" class="poster" alt="poster">
+                                    <img src="assets/greenPlay.svg" class="greenPlayBtn" alt="play-album">
+                                    <p>
+                                        <b><b>The most streamed songs of 2025 in Hindi.</b></b>
+                                    </p>
+                                </div>
+                                <div class="card devAtWork">
+                                    <img src="https://i.scdn.co/image/ab67706f000000025bfe950e2408675d7be6de9a" class="poster" alt="poster">
+                                    <img src="assets/greenPlay.svg" class="greenPlayBtn" alt="play-album">
+                                    <p>
+                                        <b><b>The most streamed songs of 2025 in Hindi.</b></b>
+                                    </p>
+                                </div>
+                                <div class="card devAtWork">
+                                    <img src="https://i.scdn.co/image/ab67706f000000025bfe950e2408675d7be6de9a" class="poster" alt="poster">
+                                    <img src="assets/greenPlay.svg" class="greenPlayBtn" alt="play-album">
+                                    <p>
+                                        <b><b>The most streamed songs of 2025 in Hindi.</b></b>
+                                    </p>
+                                </div>
+                                <div class="card devAtWork">
+                                    <img src="https://i.scdn.co/image/ab67706f000000025bfe950e2408675d7be6de9a" class="poster" alt="poster">
+                                    <img src="assets/greenPlay.svg" class="greenPlayBtn" alt="play-album">
+                                    <p>
+                                        <b><b>The most streamed songs of 2025 in Hindi.</b></b>
+                                    </p>
+                                </div>
+                                <div class="card devAtWork">
+                                    <img src="https://i.scdn.co/image/ab67706f000000025bfe950e2408675d7be6de9a" class="poster" alt="poster">
+                                    <img src="assets/greenPlay.svg" class="greenPlayBtn" alt="play-album">
+                                    <p>
+                                        <b><b>The most streamed songs of 2025 in Hindi.</b></b>
+                                    </p>
+                                </div>
+                                <div class="card devAtWork">
+                                    <img src="https://i.scdn.co/image/ab67706f000000025bfe950e2408675d7be6de9a" class="poster" alt="poster">
+                                    <img src="assets/greenPlay.svg" class="greenPlayBtn" alt="play-album">
+                                    <p>
+                                        <b><b>The most streamed songs of 2025 in Hindi.</b></b>
+                                    </p>
+                                </div>
+                                <div class="card devAtWork">
+                                    <img src="https://i.scdn.co/image/ab67706f000000025bfe950e2408675d7be6de9a" class="poster" alt="poster">
+                                    <img src="assets/greenPlay.svg" class="greenPlayBtn" alt="play-album">
+                                    <p>
+                                        <b><b>The most streamed songs of 2025 in Hindi.</b></b>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="recommended top-charts">
+                        <header class="flex items-center">
+                            <a href=""><h2><b>Editor's Pick</b></h2></a>
+                            <a href=""><b>Show all</b></a>
+                        </header>
+
+                        <div>
+                            <div class="card-container flex">
+                                <div class="card devAtWork">
+                                    <img src="https://i.scdn.co/image/ab67706f000000025bfe950e2408675d7be6de9a" class="poster" alt="poster">
+                                    <img src="assets/greenPlay.svg" class="greenPlayBtn" alt="play-album">
+                                    <p>
+                                        <b>The most streamed songs of 2025 in Hindi.</b>
+                                    </p>
+                                </div>
+
+                                <div class="card devAtWork">
+                                    <img src="https://i.scdn.co/image/ab67706f000000025bfe950e2408675d7be6de9a" class="poster" alt="poster">
+                                    <img src="assets/greenPlay.svg" class="greenPlayBtn" alt="play-album">
+                                    <p>
+                                        <b>The most streamed songs of 2025 in Hindi.</b>
+                                    </p>
+                                </div>
+
+                                <div class="card devAtWork">
+                                    <img src="https://i.scdn.co/image/ab67706f000000025bfe950e2408675d7be6de9a" class="poster" alt="poster">
+                                    <img src="assets/greenPlay.svg" class="greenPlayBtn" alt="play-album">
+                                    <p>
+                                        <b>The most streamed songs of 2025 in Hindi.</b>
+                                    </p>
+                                </div>
+
+                                <div class="card devAtWork">
+                                    <img src="https://i.scdn.co/image/ab67706f000000025bfe950e2408675d7be6de9a" class="poster" alt="poster">
+                                    <img src="assets/greenPlay.svg" class="greenPlayBtn" alt="play-album">
+                                    <p>
+                                        <b>The most streamed songs of 2025 in Hindi.</b>
+                                    </p>
+                                </div>
+
+                                <div class="card devAtWork">
+                                    <img src="https://i.scdn.co/image/ab67706f000000025bfe950e2408675d7be6de9a" class="poster" alt="poster">
+                                    <img src="assets/greenPlay.svg" class="greenPlayBtn" alt="play-album">
+                                    <p>
+                                        <b>The most streamed songs of 2025 in Hindi.</b>
+                                    </p>
+                                </div>
+                                <div class="card devAtWork">
+                                    <img src="https://i.scdn.co/image/ab67706f000000025bfe950e2408675d7be6de9a" class="poster" alt="poster">
+                                    <img src="assets/greenPlay.svg" class="greenPlayBtn" alt="play-album">
+                                    <p>
+                                        <b>The most streamed songs of 2025 in Hindi.</b>
+                                    </p>
+                                </div><div class="card devAtWork">
+                                    <img src="https://i.scdn.co/image/ab67706f000000025bfe950e2408675d7be6de9a" class="poster" alt="poster">
+                                    <img src="assets/greenPlay.svg" class="greenPlayBtn" alt="play-album">
+                                    <p>
+                                        <b>The most streamed songs of 2025 in Hindi.</b>
+                                    </p>
+                                </div><div class="card devAtWork">
+                                    <img src="https://i.scdn.co/image/ab67706f000000025bfe950e2408675d7be6de9a" class="poster" alt="poster">
+                                    <img src="assets/greenPlay.svg" class="greenPlayBtn" alt="play-album">
+                                    <p>
+                                        <b>The most streamed songs of 2025 in Hindi.</b>
+                                    </p>
+                                </div>
+
+                                <div class="card devAtWork">
+                                    <img src="https://i.scdn.co/image/ab67706f000000025bfe950e2408675d7be6de9a" class="poster" alt="poster">
+                                    <img src="assets/greenPlay.svg" class="greenPlayBtn" alt="play-album">
+                                    <p>
+                                        <b>The most streamed songs of 2025 in Hindi.</b>
+                                    </p>
+                                </div>
+
+                                <div class="card devAtWork">
+                                    <img src="https://i.scdn.co/image/ab67706f000000025bfe950e2408675d7be6de9a" class="poster" alt="poster">
+                                    <img src="assets/greenPlay.svg" class="greenPlayBtn" alt="play-album">
+                                    <p>
+                                        <b>The most streamed songs of 2025 in Hindi.</b>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="recommended top-charts">
+                        <header class="flex items-center">
+                            <a href=""><h2><b>Recently played</b></h2></a>
+                            <a href=""><b>Show all</b></a>
+                        </header>
+
+                        <div>
+                            <div class="card-container flex">
+                                <div class="card devAtWork">
+                                    <img src="https://i.scdn.co/image/ab67706f000000025bfe950e2408675d7be6de9a" class="poster" alt="poster">
+                                    <img src="assets/greenPlay.svg" class="greenPlayBtn" alt="play-album">
+                                    <p>
+                                        <b>The most streamed songs of 2025 in Hindi.</b>
+                                    </p>
+                                </div>
+
+                                <div class="card devAtWork">
+                                    <img src="https://i.scdn.co/image/ab67706f000000025bfe950e2408675d7be6de9a" class="poster" alt="poster">
+                                    <img src="assets/greenPlay.svg" class="greenPlayBtn" alt="play-album">
+                                    <p>
+                                        <b>The most streamed songs of 2025 in Hindi.</b>
+                                    </p>
+                                </div>
+
+                                <div class="card devAtWork">
+                                    <img src="https://i.scdn.co/image/ab67706f000000025bfe950e2408675d7be6de9a" class="poster" alt="poster">
+                                    <img src="assets/greenPlay.svg" class="greenPlayBtn" alt="play-album">
+                                    <p>
+                                        <b>The most streamed songs of 2025 in Hindi.</b>
+                                    </p>
+                                </div>
+
+                                <div class="card devAtWork">
+                                    <img src="https://i.scdn.co/image/ab67706f000000025bfe950e2408675d7be6de9a" class="poster" alt="poster">
+                                    <img src="assets/greenPlay.svg" class="greenPlayBtn" alt="play-album">
+                                    <p>
+                                        <b>The most streamed songs of 2025 in Hindi.</b>
+                                    </p>
+                                </div>
+
+                                <div class="card devAtWork">
+                                    <img src="https://i.scdn.co/image/ab67706f000000025bfe950e2408675d7be6de9a" class="poster" alt="poster">
+                                    <img src="assets/greenPlay.svg" class="greenPlayBtn" alt="play-album">
+                                    <p>
+                                        <b>The most streamed songs of 2025 in Hindi.</b>
+                                    </p>
+                                </div>
+
+                                <div class="card devAtWork">
+                                    <img src="https://i.scdn.co/image/ab67706f000000025bfe950e2408675d7be6de9a" class="poster" alt="poster">
+                                    <img src="assets/greenPlay.svg" class="greenPlayBtn" alt="play-album">
+                                    <p>
+                                        <b>The most streamed songs of 2025 in Hindi.</b>
+                                    </p>
+                                </div>
+
+                                <div class="card devAtWork">
+                                    <img src="https://i.scdn.co/image/ab67706f000000025bfe950e2408675d7be6de9a" class="poster" alt="poster">
+                                    <img src="assets/greenPlay.svg" class="greenPlayBtn" alt="play-album">
+                                    <p>
+                                        <b>The most streamed songs of 2025 in Hindi.</b>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="recommended top-charts">
+                        <header class="flex items-center">
+                            <a href=""><h2><b>Episodes you might like</b></h2></a>
+                            <a href=""><b>Show all</b></a>
+                        </header>
+
+                        <div>
+                            <div class="card-container flex">
+                                <div class="card devAtWork">
+                                    <img src="https://i.scdn.co/image/ab67706f000000025bfe950e2408675d7be6de9a" class="poster" alt="poster">
+                                    <img src="assets/greenPlay.svg" class="greenPlayBtn" alt="play-album">
+                                    <p>
+                                        <b>The most streamed songs of 2025 in Hindi.</b>
+                                    </p>
+                                </div>
+
+                                <div class="card devAtWork">
+                                    <img src="https://i.scdn.co/image/ab67706f000000025bfe950e2408675d7be6de9a" class="poster" alt="poster">
+                                    <img src="assets/greenPlay.svg" class="greenPlayBtn" alt="play-album">
+                                    <p>
+                                        <b>The most streamed songs of 2025 in Hindi.</b>
+                                    </p>
+                                </div>
+
+                                <div class="card devAtWork">
+                                    <img src="https://i.scdn.co/image/ab67706f000000025bfe950e2408675d7be6de9a" class="poster" alt="poster">
+                                    <img src="assets/greenPlay.svg" class="greenPlayBtn" alt="play-album">
+                                    <p>
+                                        <b>The most streamed songs of 2025 in Hindi.</b>
+                                    </p>
+                                </div><div class="card devAtWork">
+                                    <img src="https://i.scdn.co/image/ab67706f000000025bfe950e2408675d7be6de9a" class="poster" alt="poster">
+                                    <img src="assets/greenPlay.svg" class="greenPlayBtn" alt="play-album">
+                                    <p>
+                                        <b>The most streamed songs of 2025 in Hindi.</b>
+                                    </p>
+                                </div><div class="card devAtWork">
+                                    <img src="https://i.scdn.co/image/ab67706f000000025bfe950e2408675d7be6de9a" class="poster" alt="poster">
+                                    <img src="assets/greenPlay.svg" class="greenPlayBtn" alt="play-album">
+                                    <p>
+                                        <b>The most streamed songs of 2025 in Hindi.</b>
+                                    </p>
+                                </div>
+
+                                <div class="card devAtWork">
+                                    <img src="https://i.scdn.co/image/ab67706f000000025bfe950e2408675d7be6de9a" class="poster" alt="poster">
+                                    <img src="assets/greenPlay.svg" class="greenPlayBtn" alt="play-album">
+                                    <p>
+                                        <b>The most streamed songs of 2025 in Hindi.</b>
+                                    </p>
+                                </div>
+
+                                <div class="card devAtWork">
+                                    <img src="https://i.scdn.co/image/ab67706f000000025bfe950e2408675d7be6de9a" class="poster" alt="poster">
+                                    <img src="assets/greenPlay.svg" class="greenPlayBtn" alt="play-album">
+                                    <p>
+                                        <b>The most streamed songs of 2025 in Hindi.</b>
+                                    </p>
+                                </div>
+
+                                <div class="card devAtWork">
+                                    <img src="https://i.scdn.co/image/ab67706f000000025bfe950e2408675d7be6de9a" class="poster" alt="poster">
+                                    <img src="assets/greenPlay.svg" class="greenPlayBtn" alt="play-album">
+                                    <p>
+                                        <b>The most streamed songs of 2025 in Hindi.</b>
+                                    </p>
+                                </div>
+
+                                <div class="card devAtWork">
+                                    <img src="https://i.scdn.co/image/ab67706f000000025bfe950e2408675d7be6de9a" class="poster" alt="poster">
+                                    <img src="assets/greenPlay.svg" class="greenPlayBtn" alt="play-album">
+                                    <p>
+                                        <b>The most streamed songs of 2025 in Hindi.</b>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="MUSIC">
+                <div class="my-music">
+                    <header class="flex items-center">
+                        <h2><b>Albums</b></h2>
+                    </header>
+
+                    <div class="card-container flex justify-center">
+                        <!--
+                        <div class="card devAtWork">
+                            <img src="https://i.scdn.co/image/ab67706f000000025bfe950e2408675d7be6de9a" class="poster" alt="poster">
+                            <img src="assets/greenPlay.svg" class="greenPlayBtn" alt="play-album">
+                            <p>
+                                <b>The most streamed songs of 2025 in Hindi.</b>
+                            </p>
+                        </div>
+                        -->
+                    </div>
+                </div>
+            </section>
+
+            <section class="PODCASTS">
+                <div class="flex justify-center items-center">
+                    <div>
+                        <h1>Developer at work</h1>
+                        <h2>Happy learning.......</h2>
+                    </div>
+                    <img src="assets/devAtWork.svg" alt="">
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <section class="play-bar flex">
+        <div class="song-cover-details flex items-center">
+            <div class="song-poster">
+                <img src="https://i.scdn.co/image/ab67706f000000025bfe950e2408675d7be6de9a" alt="cover">
+            </div>
+            <span class="song-details flex justify-center">
+                <span class="title">
+                    <b>Play a song&nbsp;!</b>
+                </span>
+                <musicians>
+                    <span>
+                    Faheem Abdullah, Tanishk Bagchi, Arslan Nizami, Irshad Kamil &emsp;
+                    Faheem Abdullah, Tanishk Bagchi, Arslan Nizami, Irshad Kamil
+                    </span>
+                </musicians>
+            </span>
+            <button class="transformOnHover"> <img src="assets/add.svg" class="invert-50 invert-color-on-hover devAtWork" alt="Add to Liked Songs"> </button>
+        </div>
+        <div class="play-pause flex justify-center items-center">
+            <div class="upper flex justify-center items-center">
+                <button class="other-btns transformOnHover"> <img id="shuffle" src="assets/shuffle.svg" class="invert-50 invert-color-on-hover devAtWork" alt="shuffle"> </button>
+                <button class="other-btns transformOnHover"> <img id="previous" src="assets/previous.svg" class="invert-50 invert-color-on-hover" alt="prevoius"> </button>
+                <button class="play-btn flex items-center justify-center transformOnHover"> <img id="play" src="assets/play.svg" alt="play"> </button>
+                <button class="other-btns transformOnHover"> <img id="next" src="assets/next.svg" class="invert-50 invert-color-on-hover" alt="next"> </button>
+                <button class="other-btns transformOnHover"> <img id="repeat" src="assets/repeat.svg" class="invert-50 invert-color-on-hover devAtWork" alt="repeat"> </button>
+            </div>
+            <div class="lower flex items-center">
+                <span class="current-duration" style="width: 25px;"> 0:00 </span>
+                <span class="seek-bar hover flex items-center">
+                    <div class="fill">
+                        <div class="current-instance-circle"> </div>
+                    </div>
+                </span>
+                <span class="total-duration"> 0:00 </span>
+            </div>
+            <!-- I did not used input type="range" because it become a little bit uneasy to fully customize it, and using divs/spans with JS logic it'll also give me learning -->
+        </div>
+        <div class="other-functions flex items-center">
+            <button> <img src="assets/queue.svg" class="invert-50 hover invert-color-on-hover transformOnHover devAtWork" alt="queue"> </button>
+            <span class="flex volume-button-and-bar">
+                <button> <img src="assets/volume.svg" class="invert-50 hover invert-color-on-hover transformOnHover" alt="volume"> </button>
+                <input type="range" class="volume" min="0" max="100" value="40">
+            </span>
+        </div>
+    </section>
+
+</body>
+<script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>     <!-- Added via a suggestion frmo chat gpt for a good alert -->
+
+</html>

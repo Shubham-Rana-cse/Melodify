@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Spotify Mix';
+    src: local('Spotify Mix Light'), local('Spotify-Mix-Light'),
+        url('SpotifyMix-Light.woff2') format('woff2'),
+        url('SpotifyMix-Light.woff') format('woff'),
+        url('SpotifyMix-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+  }
